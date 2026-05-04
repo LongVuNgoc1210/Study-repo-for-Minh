@@ -1,0 +1,54 @@
+1) Write a program that reads two numbers from the user, adds them together, and then outputs the answer. The program
+should use two functions: A function named ReadNumber() should be used to get an integer from the user, and a function named
+“WriteAnswer” should be used to output the answer. You do not need to write a function to do the adding.
+2) Modify the program you wrote in #1 so that the function to read a number from the user and the function to output the answer
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+ 
+void PrintResult(int nResult)
+{
+    cout << "Your result is: " << nResult << endl;
+}
+ 
+int main()
+{
+    // Get first number from user
+    int nInput1 = GetUserInput();
+ 
+    // Get mathematical operation from user
+    char chOperator = GetMathematicalOperation();
+ 
+    // Get second number from user
+    int nInput2 = GetUserInput();
+ 
+    // Calculate result
+    int nResult = CalculateResult(nInput1, chOperator, nInput2);
+ 
+    // Print result
+    PrintResult(nResult);
+}
+are in a separate file called “io.cpp”. Use a forward declaration to access them from your main() function, which should live in
+“main.cpp”.
+3) Modify the program you wrote in #2 so that it uses a header file to access the functions instead of forward declarations. Make
+sure your header file uses header guards
