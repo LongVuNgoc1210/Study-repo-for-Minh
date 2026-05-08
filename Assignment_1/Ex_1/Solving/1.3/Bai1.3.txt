@@ -1,0 +1,15 @@
+a. int age;
+
+b. bool choice;
+
+c. double Pi = 3.14159265;
+
+d. int Count;
+
+e. float stock;
+
+f. int BlinkCount;
+
+g. char MenuOptions;
+
+h. int BirthYear;
