@@ -19,5 +19,9 @@ double Mul(double a, double b) {
 
 double Div(double a, double b) {
     double div = a / b;
-    return div;
+    if (b == 0) {
+        return 0;
+    } else {
+        return div;
+    }
 }
