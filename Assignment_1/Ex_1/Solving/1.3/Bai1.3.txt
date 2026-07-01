@@ -1,15 +1,15 @@
-a. int age;
+a. uint8_t age;
 
 b. bool choice;
 
 c. double Pi = 3.14159265;
 
-d. int Count;
+d. uint8_t Count;
 
 e. float stock;
 
-f. int BlinkCount;
+f. uint32_t BlinkCount;
 
 g. char MenuOptions;
 
-h. int BirthYear;
+h. uint16_t BirthYear;
