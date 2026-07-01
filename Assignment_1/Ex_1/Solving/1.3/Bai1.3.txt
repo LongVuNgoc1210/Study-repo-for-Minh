@@ -1,0 +1,15 @@
+a. uint8_t isAge;
+
+b. bool isChoice;
+
+c. const double Pi = 3.14159265;
+
+d. uint8_t isCount;
+
+e. float isStock;
+
+f. uint32_t isBlinkCount;
+
+g. char isMenuOptions;
+
+h. uint16_t isBirthYear;
