@@ -25,12 +25,10 @@ int main() {
     else if(dau == '/') {
         if(num2 != 0) {
         result = Div(num1, num2);
-    }   else{
+    }   else {
+        std::cout << "Error "<< std::endl;
         return 0;
     }
-    }
-    else{
-        return 0;
     }
     std::cout << result << std::endl;
     return 0;
