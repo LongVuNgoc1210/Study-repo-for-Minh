@@ -1,0 +1,4 @@
+4) Ask the user for a number between 1 and 9. If the user does not enter a number between 1 and 
+ 9, repeatedly ask for a number until they do. Once they have entered a number between 1 and 9,
+print the array. Then search the array for the number that the user entered and print the index
+ of that element.
