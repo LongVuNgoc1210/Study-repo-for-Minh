@@ -1,0 +1,23 @@
+5) What values does this program print? Assume a short is 2 bytes, and a 32-bit machine 
+short nValue = 7; // &nValue = 0012FF60 
+short nOtherValue = 3; // &nOtherValue = 0012FF54 
+short *pnPtr = &nValue; 
+cout << &nValue << endl;  0012FF60 
+cout << nValue << endl;   7
+cout << pnPtr << endl;    0012FF60 
+cout << *pnPtr << endl;   7
+cout << endl; 
+*pnPtr = 9; 
+cout << &nValue << endl;  0012FF60 
+cout << nValue << endl;   9
+cout << pnPtr << endl;    0012FF60 
+cout << *pnPtr << endl;   9
+cout << endl;
+ pnPtr = &nOtherValue;    
+cout << &nOtherValue << endl; 0012FF54
+cout << nOtherValue << endl;  3
+cout << pnPtr << endl;        0012FF54
+ cout << *pnPtr << endl;      3
+cout << endl; 
+cout << sizeof(pnPtr) << endl; 4
+cout << sizeof(*pnPtr) << endl; 2
