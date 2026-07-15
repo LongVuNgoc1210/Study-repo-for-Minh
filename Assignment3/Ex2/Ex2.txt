@@ -1,0 +1,4 @@
+Exercise 2 (Medium): Number Analyzer
+Repeatedly input integers until: - 0: stop normally. - 999: terminate
+immediately using break. Ignore negative numbers using continue. Count
+positive, even, odd numbers and their sum.
