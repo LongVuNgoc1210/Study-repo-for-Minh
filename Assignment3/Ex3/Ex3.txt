@@ -1,0 +1,9 @@
+Exercise 3 (Hard): Employee Salary Management
+
+Create: - Global variable: double taxRate = 0.10; - Namespace Payroll
+with: - calculateTax() - calculateNetSalary()
+
+Create a menu using do…while and switch: 1. Calculate tax 2. Calculate
+net salary 3. Change tax rate 0. Exit
+
+Use the global variable through the scope resolution operator (::).
