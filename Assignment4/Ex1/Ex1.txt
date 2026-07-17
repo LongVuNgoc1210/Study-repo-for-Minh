@@ -1,0 +1,35 @@
+Exercise 1 (Easy)
+Geometry Calculator
+
+Objective
+- Practice writing and calling functions.
+- Practice function declaration and definition.
+- Practice returning values from functions.
+- Separate the program into small reusable functions.
+
+Problem
+Write a program that allows the user to calculate the area and perimeter of basic geometric shapes.
+
+Menu
+1. Rectangle
+2. Circle
+3. Triangle
+0. Exit
+
+Required Functions
+void showMenu();
+double rectangleArea(double length, double width);
+double rectanglePerimeter(double length, double width);
+double circleArea(double radius);
+double circleCircumference(double radius);
+double triangleArea(double base, double height);
+void printResult(double area, double perimeter);
+
+For a triangle, only calculate the area and display "Perimeter: N/A".
+
+Requirements
+- All calculations must be implemented inside functions.
+- main() only displays the menu, gets input and calls functions.
+
+Bonus
+Add Square and reuse rectangle functions.
