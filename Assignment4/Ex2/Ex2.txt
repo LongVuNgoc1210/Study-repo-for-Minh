@@ -1,0 +1,22 @@
+Exercise 2 (Intermediate)
+Swap & Number Statistics
+
+Objective
+- Pass by Value
+- Pass by Reference
+- Pass by Address
+
+Problem
+Implement:
+- void swapByValue(int a, int b);
+- void swapByReference(int &a, int &b);
+- void swapByAddress(int *a, int *b);
+- void findMinMax(int a, int b, int &min, int &max);
+
+Requirements
+- Compare values before and after each function.
+- Check nullptr before dereferencing pointers.
+- Do not use global variables.
+
+Bonus
+Implement bool isEven(int number);
