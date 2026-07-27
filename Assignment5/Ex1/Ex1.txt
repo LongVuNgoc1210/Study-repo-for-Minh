@@ -1,0 +1,122 @@
+EXERCISE 1 – EASY: BANK ACCOUNT MANAGEMENT
+============================================================
+
+1. OBJECTIVES
+-------------
+After completing this exercise, you should be able to:
+- Create and use a class and objects.
+- Declare private data members.
+- Use public member functions.
+- Apply encapsulation.
+- Use a default constructor.
+- Use a parameterized constructor.
+- Implement basic validation.
+
+2. PROBLEM DESCRIPTION
+----------------------
+Build a C++ program to manage a bank account.
+
+Create a class named BankAccount with the following private data members:
+
+- accountNumber: string
+- ownerName: string
+- balance: double
+
+All data members must be private to ensure encapsulation.
+
+The class must provide the following public member functions:
+
+void deposit(double amount);
+void withdraw(double amount);
+void displayAccountInfo();
+
+3. deposit(double amount)
+-------------------------
+Requirements:
+- If amount > 0, add amount to balance.
+- If amount <= 0, print:
+
+Invalid deposit amount!
+
+4. withdraw(double amount)
+--------------------------
+Requirements:
+- If amount <= 0, print:
+
+Invalid withdrawal amount!
+
+- If amount > balance, print:
+
+Insufficient balance!
+
+- Otherwise, subtract amount from balance.
+
+5. displayAccountInfo()
+-----------------------
+Display information in the following format:
+
+Account Number: 123456
+Owner Name: Nguyen Van A
+Balance: 5000000
+
+6. CONSTRUCTORS
+---------------
+Default Constructor:
+Initialize:
+- accountNumber = "UNKNOWN"
+- ownerName = "UNKNOWN"
+- balance = 0
+
+Parameterized Constructor:
+
+BankAccount(string accountNumber, string ownerName, double balance);
+
+7. MAIN FUNCTION REQUIREMENTS
+-----------------------------
+In main():
+
+1. Create an object using the default constructor:
+
+BankAccount account1;
+
+2. Create an object using the parameterized constructor:
+
+BankAccount account2("123456", "Nguyen Van A", 5000000);
+
+3. Display account1.
+4. Display account2.
+5. Deposit 1000000 into account2.
+6. Withdraw 2000000 from account2.
+7. Try to withdraw 10000000 from account2.
+8. Display the final information of account2.
+
+8. EXPECTED OUTPUT
+------------------
+Account Number: UNKNOWN
+Owner Name: UNKNOWN
+Balance: 0
+
+Account Number: 123456
+Owner Name: Nguyen Van A
+Balance: 5000000
+
+Deposit successful!
+
+Withdrawal successful!
+
+Insufficient balance!
+
+Account Number: 123456
+Owner Name: Nguyen Van A
+Balance: 4000000
+
+9. HINTS
+--------
+- Put data members in private.
+- Put operations that users need in public.
+- Use a member initializer list for constructors if possible.
+- Do not allow main() to directly modify private data members.
+
+For example, this must not be allowed:
+
+account2.balance = 10000000;

@@ -1,0 +1,190 @@
+EXERCISE 2 – MEDIUM: STUDENT MANAGEMENT SYSTEM
+============================================================
+
+1. OBJECTIVES
+-------------
+This exercise focuses on:
+- Class and Object
+- Encapsulation
+- private and public
+- Default Constructor
+- Parameterized Constructor
+- Copy Constructor
+- Destructor
+- Data validation
+- Member functions
+
+2. PROBLEM DESCRIPTION
+----------------------
+Create a class named Student to manage student information.
+
+Private data members:
+
+string studentId;
+string name;
+double mathScore;
+double englishScore;
+double programmingScore;
+
+Each score must satisfy:
+
+0 <= score <= 10
+
+3. DEFAULT CONSTRUCTOR
+----------------------
+Create:
+
+Student();
+
+Initialize:
+- studentId = "UNKNOWN"
+- name = "UNKNOWN"
+- mathScore = 0
+- englishScore = 0
+- programmingScore = 0
+
+4. PARAMETERIZED CONSTRUCTOR
+----------------------------
+Create:
+
+Student(
+    string studentId,
+    string name,
+    double mathScore,
+    double englishScore,
+    double programmingScore
+);
+
+If any score is less than 0 or greater than 10, set that score to 0.
+
+5. COPY CONSTRUCTOR
+-------------------
+Create:
+
+Student(const Student& other);
+
+The copy constructor must copy all data from other.
+
+Example:
+
+Student student1(
+    "SV001",
+    "Nguyen Van A",
+    8.5,
+    7.5,
+    9.0
+);
+
+Student student2(student1);
+
+student2 must contain the same data as student1.
+
+6. CALCULATE AVERAGE
+--------------------
+Create:
+
+double calculateAverage();
+
+Formula:
+
+average = (mathScore + englishScore + programmingScore) / 3
+
+7. GET GRADE
+------------
+Create:
+
+string getGrade();
+
+Rules:
+- Average >= 8.0: Excellent
+- Average >= 6.5: Good
+- Average >= 5.0: Average
+- Average < 5.0: Poor
+
+8. DISPLAY INFORMATION
+----------------------
+Create:
+
+void displayInfo();
+
+Expected format:
+
+Student ID: SV001
+Name: Nguyen Van A
+Math: 8.5
+English: 7.5
+Programming: 9
+Average: 8.33333
+Grade: Excellent
+
+9. DESTRUCTOR
+-------------
+Create:
+
+~Student();
+
+Print:
+
+Student object is being destroyed.
+
+The purpose is to observe when an object is destroyed.
+
+10. MAIN FUNCTION REQUIREMENTS
+------------------------------
+In main():
+
+1. Create student1 using the parameterized constructor.
+2. Display student1.
+3. Create student2 using the copy constructor from student1.
+4. Display student2.
+5. Create student3 using the default constructor.
+6. Display student3.
+7. Observe destructor messages.
+
+11. EXPECTED OUTPUT
+-------------------
+Student 1:
+Student ID: SV001
+Name: Nguyen Van A
+Math: 8.5
+English: 7.5
+Programming: 9
+Average: 8.33333
+Grade: Excellent
+
+Student 2:
+Student ID: SV001
+Name: Nguyen Van A
+Math: 8.5
+English: 7.5
+Programming: 9
+Average: 8.33333
+Grade: Excellent
+
+Student 3:
+Student ID: UNKNOWN
+Name: UNKNOWN
+Math: 0
+English: 0
+Programming: 0
+Average: 0
+Grade: Poor
+
+Student object is being destroyed.
+
+Note: The exact destructor output order depends on object scope and creation order.
+
+12. HINTS
+---------
+You can implement the copy constructor using:
+
+Student(const Student& other)
+{
+    studentId = other.studentId;
+    name = other.name;
+    mathScore = other.mathScore;
+    englishScore = other.englishScore;
+    programmingScore = other.programmingScore;
+}
+
+Or use a member initializer list.
