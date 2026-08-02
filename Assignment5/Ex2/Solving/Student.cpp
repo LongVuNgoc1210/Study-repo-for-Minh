@@ -8,7 +8,6 @@ Student::Student(){
     englishScore = 0;
     programmingScore = 0;
 }
-
 Student::Student(const std::string& id, const std::string& studentName, double math, double english, double programming){
     if(id.empty() || studentName.empty() || math < 0 || english < 0 || programming < 0) {
         throw std::invalid_argument("Invalid input for Student constructor");

@@ -14,5 +14,6 @@ class Student {
         double calculateAverageScore() const;
         std::string getGrade() const;
         void displayStudentInfo() const;
+        
         ~Student();
 };

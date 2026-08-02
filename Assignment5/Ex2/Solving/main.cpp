@@ -9,4 +9,5 @@ int main() {
     Student student3; // Using default constructor
     student3.displayStudentInfo();
     student2.~Student();
+    
 }
